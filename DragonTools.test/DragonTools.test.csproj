@@ -1,19 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
-
+    <TargetFramework>net8.0</TargetFramework>
     <IsPackable>false</IsPackable>
-
     <Version>0.6.0</Version>
-
     <Authors>Rolf Michelsen</Authors>
-
     <Product>DragonTools</Product>
-
     <Copyright>(C) Copyright 2011-2019 Rolf Michelsen</Copyright>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="5.10.2" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
@@ -27,11 +20,9 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\DragonTools\DragonTools.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <None Update="Testdata\Dancer.cas">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -100,11 +91,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-
   <ItemGroup>
     <Folder Include="Filesystem\" />
     <Folder Include="Basic\" />
     <Folder Include="Tape\" />
   </ItemGroup>
-
 </Project>
